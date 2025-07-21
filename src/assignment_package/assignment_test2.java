@@ -11,9 +11,6 @@ public class assignment_test2 {
         libUser.libraryTiming();
         libUser.issueBook("Java Basics ", 101, "John Smith");
         libUser.returnBook("Java Basics ", 101);
-
-
-
         System.out.println("\n==============================================================\n");
         System.out.println("\n--- Encapsulation Example ---");
         Account_Encapsulation acc = new Account_Encapsulation();
