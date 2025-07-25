@@ -85,3 +85,5 @@ public class java_linkedlist {
         list.deleteByValue(100); // Not in list
     }
 }
+// tree set in java navigable set implementation based in the it provide the unique to store the element  tree mai sthe self blancing hgh trre it hdgbj after so nanat retablibe so many deletion and inseration' it store in tree map in dumping value
+// linked hashset is the class in java that implementate the java interface that implement hashset mapp but implement the doublely linked list it is simmilar to hash set but it so handles with entry of double linked list it has the unigue linked hashset insertion of the order that means the order add in this is preversed
