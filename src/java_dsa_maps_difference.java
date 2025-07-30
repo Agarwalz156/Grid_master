@@ -6,7 +6,7 @@ public class java_dsa_maps_difference {
         String[] values = {"Three", "Seventy-One", "Fourty-three", "Five", "Six"};
 
         Map<Integer, String> hashMap = new HashMap<>();
-        Map<Integer, String> linkedHashMap = new LinkedHashMap<>();
+        Map<Integer, String> linkedHashMap = new LinkedHashMap<>();  
         TreeMap<Integer, String> treeMap = new TreeMap<>();
 
         for (int i = 0; i < keys.length; i++) {
