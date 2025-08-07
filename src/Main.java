@@ -89,5 +89,7 @@ public class Main {
         } else {
             System.out.println(original + " is NOT a Palindrome number.");
         }
+        System.out.println(Thread.currentThread().getName());
+
     }
 }
