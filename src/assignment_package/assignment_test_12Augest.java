@@ -16,7 +16,7 @@ public class assignment_test_12Augest {
                 count++;
                 System.out.println(Thread.currentThread().getName() + " incremented count to " + count);
             } finally {
-                lock.unlock(); // Lock released
+                lock.unlock(); 
             }
         }
 
@@ -34,7 +34,7 @@ public class assignment_test_12Augest {
             for (int i = 0; i < 3; i++) {
                 counter.increment();
                 try {
-                    Thread.sleep(500); // Timed waiting
+                    Thread.sleep(500); 
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
@@ -42,16 +42,16 @@ public class assignment_test_12Augest {
         };
 
 
-        // 2. Callable functional interface (returns value)
+        //  Callable functional interface (returns value
         Callable<String> task2 = () -> {
             Thread.sleep(1000);
             return "Callable task completed by " + Thread.currentThread().getName();
         };
 
-        // 3. Predicate functional interface (returns boolean)
+        //  Predicate functional interface (returns boolean)
         Predicate<Integer> isEven = num -> num % 2 == 0;
 
-        // Creating and starting threads
+
         Thread t1 = new Thread(task1, "Worker-1");
         Thread t2 = new Thread(task1, "Worker-2");
 
@@ -63,12 +63,12 @@ public class assignment_test_12Augest {
         t2.join();
 
         System.out.println("\n---------------------------------------------------\n");
-        // Using Callable
+        
         String result = task2.call();
         System.out.println(result);
 
         System.out.println("\n---------------------------------------------------\n");
-        // Using Predicate
+        
         int numberToCheck = counter.getCount();
         System.out.println("Final Count: " + numberToCheck);
         System.out.println("Is final count even? " + isEven.test(numberToCheck));
